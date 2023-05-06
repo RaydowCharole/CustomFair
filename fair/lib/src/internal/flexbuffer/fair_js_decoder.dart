@@ -16,12 +16,12 @@ class FairJSFairJSDecoderHelper {
       // throw FlutterError('');
       return beforePath;
     }
-    if (beforePath.startsWith('http')) {
-      return beforePath;
-    } else {
+    // if (beforePath.startsWith('http')) {
+    //   return beforePath;
+    // } else {
       //加载其它路径判断待定
       return beforePath.substring(0, beforePath.lastIndexOf('.')) + '.js';
-    }
+    // }
   }
 }
 
